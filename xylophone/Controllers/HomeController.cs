@@ -11,8 +11,6 @@ using xylophone.Filters;
 
 namespace xylophone.Controllers
 {
-    [Authorize]
-    [InitializeSimpleMembership]
     public class HomeController : Controller
     {
         public ActionResult Index()
