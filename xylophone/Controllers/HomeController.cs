@@ -7,10 +7,12 @@ using xylophone.Models;
 using WebMatrix.WebData;
 using System.Web.Security;
 using Microsoft.Web.WebPages.OAuth;
-
+using xylophone.Filters;
 
 namespace xylophone.Controllers
 {
+    [Authorize]
+    [InitializeSimpleMembership]
     public class HomeController : Controller
     {
         public ActionResult Index()
