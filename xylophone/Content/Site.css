@@ -50,14 +50,15 @@ h3
 {
 	float: left;
 	width: 900px;
-	background: #fff
+    background: #CCFFFF;
 }
 
 #header
 {
+    float: left;
+    width: 900px;
 	background: #99FFCC;
 	margin: 0 0 20px 0;
-	height: 100px;
 }
 
 #spacer
@@ -80,6 +81,7 @@ div.left
     clear: left;
     float: left;
     display: inline;
+    padding: 0;
     margin: 0;
 }
 
@@ -88,13 +90,13 @@ div.right
     clear: right;
     float: right;
     display: inline;
+    padding: 0;
     margin: 0;
 }
 
 #left-content
 {
    	width: 410px; 
-   	background: #CCFFFF;
 	min-height: 200px;
 	padding: 20px;
 }
@@ -118,11 +120,18 @@ div.right
     padding: 20px;
 }
 
+#panel ul
+{
+    margin: 0;
+    padding: 0;   
+}
+
 #panel li
 {
     margin: 0;
     padding: 0;   
-    
+    display: inline;
+    list-style-type: none;
 }
 
 /* SCARY STUFF PAST THIS POINT*/
