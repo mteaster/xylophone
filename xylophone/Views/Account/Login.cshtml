@@ -1,10 +1,8 @@
 ﻿@model xylophone.Models.LoginModel
-@{
-    ViewBag.Title = "Log in";
-}
 
 <div id="content">
     <h2>Log in</h2>
+
     @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
     {
         @Html.AntiForgeryToken()

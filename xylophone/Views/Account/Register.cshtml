@@ -1,15 +1,10 @@
 ﻿@model xylophone.Models.RegisterModel
-@{
-    ViewBag.Title = "Register";
-}
 
 <div id="content">
-    <hgroup class="title">
-        <h1>@ViewBag.Title.</h1>
-        <h2>Create a new account.</h2>
-    </hgroup>
+    <h2>Sign up!</h2>
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm()) 
+    {
         @Html.AntiForgeryToken()
         @Html.ValidationSummary()
 
