@@ -10,7 +10,9 @@
     <body>
         <div id="container">
             <div id="header">
-                <div id="banner" class="left">welcome</div>
+                <div id="banner" class="left">
+                    @Html.ActionLink("Xylophone", "Index", "Home",  routeValues: null, htmlAttributes: new { id = "homeLink" } )
+                </div>
                 <div id="panel" class="right">
                     @Html.Partial("_LoginPartial")
                 </div>
