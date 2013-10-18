@@ -46,6 +46,14 @@ h3
 	width: 900px;                                                                                                   
 }
 
+#content
+{
+	float: left;
+	width: 900px;
+    background: #CCFFFF;
+    padding: 20px;
+}
+
 #content-container
 {
 	float: left;

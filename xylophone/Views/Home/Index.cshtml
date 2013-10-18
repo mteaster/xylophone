@@ -2,42 +2,44 @@
 @{
     ViewBag.Title = "Home Page";
 }
-<div id="left-content" class="left">
-    <h2>Marketing speak</h2>
-    <ol>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Donec metus nisl, mollis eu auctor at, aliquam vitae lorem. </li>
-        <li>Curabitur accumsan mi at euismod egestas. </li>
-    </ol>
-</div>
 
-<div id="right-content" class="right">
-    <h2>Sign up!</h2>
-    @using (Html.BeginForm("Register", "Account"))
-    {
-        @Html.AntiForgeryToken()
-        @Html.ValidationSummary()
+<div id="content-container">
+    <div id="left-content" class="left">
+        <h2>Marketing speak</h2>
+        <ol>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Donec metus nisl, mollis eu auctor at, aliquam vitae lorem. </li>
+            <li>Curabitur accumsan mi at euismod egestas. </li>
+        </ol>
+    </div>
+    <div id="right-content" class="right">
+        <h2>Sign up!</h2>
+        @using (Html.BeginForm("Register", "Account"))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary()
 
-        <fieldset>
-            <legend>Registration Form</legend>
-            <ol>
-                <li>
-                    @Html.LabelFor(m => m.UserName)
-                    @Html.TextBoxFor(m => m.UserName)
-                </li>
-                <li>
-                    @Html.LabelFor(m => m.Password)
-                    @Html.PasswordFor(m => m.Password)
-                </li>
-                <li>
-                    @Html.LabelFor(m => m.ConfirmPassword)
-                    @Html.PasswordFor(m => m.ConfirmPassword)
-                </li>
-            </ol>
-            <input type="submit" value="Register" />
-        </fieldset>
-    }
-    @section Scripts {
-        @Scripts.Render("~/bundles/jqueryval")
-    }
+            <fieldset>
+                <legend>Registration Form</legend>
+                <ol>
+                    <li>
+                        @Html.LabelFor(m => m.UserName)
+                        @Html.TextBoxFor(m => m.UserName)
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.Password)
+                        @Html.PasswordFor(m => m.Password)
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.ConfirmPassword)
+                        @Html.PasswordFor(m => m.ConfirmPassword)
+                    </li>
+                </ol>
+                <input type="submit" value="Register" />
+            </fieldset>
+        }
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }
+    </div>
 </div>
